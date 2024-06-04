@@ -8,9 +8,10 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import Navbar from "./components/Navbar";// Import your Navbar component
 import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';      
 
-const App = () => {
+const App = () => 
+  {
   return (
     <>
       <Router>
@@ -28,4 +29,4 @@ const App = () => {
   );
 };
 
-export default App; 
+export default App;   
