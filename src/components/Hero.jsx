@@ -26,4 +26,5 @@ const Hero = ({ title, imageUrl }) => {
   );
 };
 
-export default Hero; 
+
+export default Hero;  
