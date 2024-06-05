@@ -15,3 +15,33 @@ const Navbar = () => {
   };
 
   return (
+    <>
+      <nav className={"container"}>
+        <div className="logo">
+          <img src="/logo.png" alt="logo" className="logo-img" />
+        </div>
+        <div className={show ? "navLinks showmenu" : "navLinks"}>
+          <div className="links">
+            <Link to={"/"} onClick={handleMenuToggle}>
+              Home
+            </Link>
+            <Link to={"/appointment"} onClick={handleMenuToggle}>
+              Appointment
+            </Link>
+            <Link to={"/about"} onClick={handleMenuToggle}>
+              About Us
+            </Link>
+          </div>
+          <button className="loginBtn btn" onClick={goToLogin}>
+            LOGIN
+          </button>
+        </div>
+        <div className="hamburger" onClick={handleMenuToggle}>
+          <GiHamburgerMenu />
+        </div>
+      </nav>
+    </>
+  );
+};
+
+export default Navbar;
